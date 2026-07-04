@@ -189,7 +189,7 @@ class CarritoServiceTest {
         verify(itemCarritoRepository, never()).save(any());
     }
 
-    // ---------- eliminarItem ----------
+    
 
     @Test
     void eliminarItem_itemPropio_debeEliminar() {
@@ -228,7 +228,7 @@ class CarritoServiceTest {
         verify(itemCarritoRepository, never()).delete(any());
     }
 
-    // ---------- vaciarCarrito ----------
+    
 
     @Test
     void vaciarCarrito_debeLlamarDeleteByIdUsuario() {
